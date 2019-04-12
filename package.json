@@ -1,0 +1,19 @@
+{
+  "name": "spa-demo",
+  "version": "1.0.0",
+  "description": "spa-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wan2banwangcen/spa-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wan2banwangcen/spa-demo/issues"
+  },
+  "homepage": "https://github.com/wan2banwangcen/spa-demo#readme"
+}
