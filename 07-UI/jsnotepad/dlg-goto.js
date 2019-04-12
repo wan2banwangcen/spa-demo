@@ -1,7 +1,7 @@
 /* exported $dlgGoto */
 var $dlgGoto = (function(){
   var init = function(){
-    var DOM=''
+    var DOM = ''
       +'<div class="notepad-goto-dlg">'
         +'<div class="dialogbox">'
           +'<div class="titlebar">'
