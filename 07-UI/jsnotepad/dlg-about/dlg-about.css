@@ -62,22 +62,24 @@ body,html {
 }
 .notepad-goto-dlg .main .slogan{
   text-align:center;
-  font-size:3em;
+  font-size:4:`
+
+  `em;
   color:blue;
   margin:20px auto;
   padding:0;
   margin-bottom:30px;
 }
 .notepad-goto-dlg .main .logo{
-  margin:10px 10px;
+  margin-left:10px;
 }
 .notepad-goto-dlg .main .info{
   display:inline-block;
   height:100px;
-  left:80px;
   line-height:15px;
   font-size:1em;
-  margin-left:25px;
+  margin-left:5px;
+  width:377px;
 }
 .notepad-goto-dlg .main .btn-ok{
     width:50px;
