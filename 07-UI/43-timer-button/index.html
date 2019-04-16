@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器按钮测试页面</title>
+  <link rel="stylesheet" href="timer-button.css">  
+  <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+  <style>
+    .main{
+      width:200px;
+      height:200px;
+      margin:0 auto;
+    }
+  </style>  
+</head>
+<body>
+<input class="add-btn" type="button" value="add timer button1">
+<input class="add-btn" type="button" value="add timer button2">
+<input class="del-btn" type="button" value="del timer button">
+<div class="main1"></div>
+<div class="main2"></div>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="timer-button.js"></script>
+<script>
+$(function(){
+    var $btnAdd1 = $('input[value="add timer button1"]');
+    var $btnAdd2 = $('input[value="add timer button2"]');
+    var $btnDel = $('input.del-btn');
+    $btnAdd1.click(function(){
+      var btn1 = new TimerButton();
+       btn1.init({
+          container:'.main1',
+          title:'发送验证码',
+          time:20,
+          clickHandler:function(){alert('handler event click');}
+        });
+        /*btn.on('timer-button-click',function(){
+          alert('trigger click');
+        })*/
+    });
+    $btnAdd2.click(function(){
+      var btn2 = new TimerButton();
+       btn2.init({
+        container:'.main2',
+        title:'hhhhh',
+        time:15,
+        clickHandler:function(){alert('btn2 click');}
+      });
+    });
+    $btnDel.click(function(){
+      $timerBtn.remove();
+    });
+})
+</script>
+</body>
+</html>

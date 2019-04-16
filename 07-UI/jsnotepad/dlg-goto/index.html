@@ -31,7 +31,11 @@
 $(function(){
     var $btnPopup = $('input.popup');
     $btnPopup.click(function(){
-      $dlgGoto.init();
+      $dlgGoto.init({
+        curLine:3,
+        total:15,
+        gotoHandler:function(e){console.log('click to goto line %s',e);}
+        });
       });
 });
 </script>
